@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Success</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <div class="success">
+
+        <div class="container">
+            <h1>Signup Successful!</h1>
+            <h2>Your Details:</h2>
+            <p id="userInfo"></p>
+        </div>
+    
+        <script>
+            // Retrieve data from localStorage
+            const firstName = localStorage.getItem('firstName');
+            const lastName = localStorage.getItem('lastName');
+            const email = localStorage.getItem('email');
+            const address = localStorage.getItem('address');
+    
+            if (firstName || lastName || username || email || address) {
+                // Display the information
+                document.getElementById('userInfo').innerText = 
+                    `First Name: ${firstName}\nLast Name: ${lastName} \nEmail: ${email}\nAddress: ${address}`;
+            } else {
+                document.getElementById('userInfo').innerText = "No user information found.";
+            }
+        </script>
+    
+        <div>
+            <button onclick="window.location.href='portal.html'" class="point">Home</button>
+        </div>
+    </div>
+</body>
+</html>

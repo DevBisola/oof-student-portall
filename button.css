@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+  }
+  .div{
+    background-image: url(./images/frontpage3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .signUp{
+    border: 2px solid black;
+  }
+  .user{
+    border: 2px solid red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: cursive;
+  }

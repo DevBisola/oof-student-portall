@@ -1,0 +1,13 @@
+.closer{
+    background-image: url(images/frontpage3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topbar{
+    padding: 20px;
+    border-radius: 230px 100px;
+    background-color: yellowgreen !important;    
+}
+.col{
+    color: white;
+}
